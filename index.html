@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Currículums Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Currículums Vitae</h1>
+        <form id="cv-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion">
+            <label for="objetivo">Objetivo:</label>
+            <textarea id="objetivo"></textarea>
+            <label for="educacion">Educación:</label>
+            <textarea id="educacion"></textarea>
+            <label for="experiencia">Experiencia Laboral:</label>
+            <textarea id="experiencia"></textarea>
+            <label for="habilidades">Habilidades:</label>
+            <textarea id="habilidades"></textarea>
+            <button type="submit">Generar Currículum</button>
+        </form>
+        <div id="cv-preview" class="hidden">
+            <!-- Aquí se mostrará el currículum generado -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
